@@ -1,0 +1,38 @@
+<body>
+    <h3>Back to homepage!</h3>
+    <form method="post" action="/index">
+        <strong>Teachers:</strong>
+
+        {% if content %}
+
+        <table>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Last Name</th>
+
+            </tr>
+
+            {% for teach in content %}
+
+            <tr>
+
+                <td>{{fname}}</td>
+                <td>{{lname}}</td>
+              
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+        {% else %}
+
+        <strong>No data!</strong>
+
+        {% endif %}
+
+</body>
